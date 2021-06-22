@@ -13,37 +13,38 @@ let questions_five = 'Do I like mansaf (منسف)?';
 let user_ans = prompt(questions_one);
 console.log(user_ans.toLowerCase());
 
-function tree(x) {
-    let x1 = (x == 'yes');
-    let y1 = (x == 'no');
+function cheker_f(user_inp) {
+    let x1 = (user_inp.toLowerCase() == 'yes');
+    let y1 = (user_inp.toLowerCase()  == 'no');
     let z = x1 || y1;
-    console.log(x);
+    console.log(user_inp);
     console.log(x1);
     console.log(!z);
     return !z;
 
 }
-function val(x, v) {
-    while (tree(x)) {
-        console.log(tree(x))
+function validation(user_inp, Qus) {
+    while (cheker_f(user_inp)) {
+        console.log(cheker_f(user_inp))
         alert('please anser by \'yes\' or \'no\'');
-        x = prompt(v)
-        console.log(x);
+        user_inp = prompt(Qus)
+        console.log(user_inp);
     }
+    return user_inp 
 }
-val(user_ans.toLowerCase(), questions_one);
-// console.log(tree(user_ans.toLowerCase(), user_ans.toLowerCase(),));
+user_ans = validation(user_ans.toLowerCase(), questions_one);
+// console.log(cheker_f(user_ans.toLowerCase(), user_ans.toLowerCase(),));
 // console.log(user_ans.toLowerCase());
 
 if (user_ans.toLowerCase() === 'yes') {
     alert('you are correct');
 } else {
-    alert('wtong anser I don\'t like it')
+    alert('wrong answer I don\'t like it')
 };
 
 let user_ans2 = prompt(questions_two);
 // console.log(user_ans2);
-val(user_ans2.toLowerCase(), questions_two);
+user_ans2 = validation(user_ans2.toLowerCase(), questions_two);
 switch (user_ans2.toLowerCase()) {
     case "yes":
         alert('well done, you are right')
@@ -56,7 +57,7 @@ switch (user_ans2.toLowerCase()) {
 };
 let user_ans3 = prompt(questions_three);
 // console.log(user_ans3);
-val(user_ans2.toLowerCase(), questions_three);
+user_ans3 = validation(user_ans2.toLowerCase(), questions_three);
 switch (user_ans3.toLowerCase()) {
     case "yes":
         alert('well done, you are right')
@@ -69,7 +70,7 @@ switch (user_ans3.toLowerCase()) {
 };
 let user_ans4 = prompt(questions_fore);
 // console.log(user_ans4);
-val(user_ans4.toLowerCase(), questions_fore);
+user_ans4 = validation(user_ans4.toLowerCase(), questions_fore);
 
 switch (user_ans4.toLowerCase()) {
     case "yes":
@@ -83,7 +84,7 @@ switch (user_ans4.toLowerCase()) {
 };
 let user_ans5 = prompt(questions_five);
 // console.log(user_ans5);
-val(user_ans5.toLowerCase(), questions_five);
+user_ans5 = validation(user_ans5.toLowerCase(), questions_five);
 switch (user_ans5.toLowerCase()) {
     case "yes":
         alert('well done, you are right')
