@@ -1,5 +1,5 @@
 * {
-    background-color: #138b6f;
+    background-color: #309958;
     font-family: 'Courier New', Courier, monospace;
 }
 h3,
@@ -42,3 +42,32 @@ hr {
     background-color:#138b6f;
     margin: 20px;
 }
+ol {
+    font-weight:bold;
+    list-style: upper-roman;
+}
+ul {
+    font-weight:bold;
+    list-style: outside;
+}
+.lists {
+    margin: 8%;
+    /* text-align: start; */
+font-family: 'Courier New', Courier, monospace;
+font-size: 1.5rem;
+}
+li {
+    margin: 10px;
+}
+footer {
+    text-align: center;
+    font-weight: bolder;
+}
+h5 {
+    font-size: 1.8rem;
+}
+/* body{
+    -webkit-transform: scale(0.75);
+       -moz-transform: scale(0.75);
+            transform: scale(0.75);
+} */
