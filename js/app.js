@@ -1,7 +1,9 @@
+'use strict'
+
 let arr_index = 0;
 let scoreA = [];
 let score = 0;
-'use strict'
+
 let welcome_message = 'Welcome To My website, Can You give me your First & Last Name? Please';
 let user_name = prompt(welcome_message);
 while (!user_name) {
@@ -41,22 +43,31 @@ function validation(user_inp, Qus) {
     return user_inp
 }
 user_ans = validation(user_ans.toLowerCase(), questions_one);
-// console.log(checker_f(user_ans.toLowerCase(), user_ans.toLowerCase(),));
-// console.log(user_ans.toLowerCase());
+console.log(checker_f(user_ans.toLowerCase(), user_ans.toLowerCase(),));
+console.log(user_ans.toLowerCase());
 
-if (user_ans.toLowerCase() === 'yes' || user_ans.toLowerCase() === 'y') {
-    alert('you are correct');
-    score++
-    scoreA[arr_index++] = 'your answer was correct'
-} else if (user_ans.toLowerCase() === 'no' || user_ans.toLowerCase() === 'n') {
-    alert('wrong answer I don\'t like it')
-    scoreA[arr_index++] = 'your answer was Wrong'
-};
+
+function Qus1(Qus1_b) {
+    if (Qus1_b.toLowerCase() === 'yes' || Qus1_b.toLowerCase() === 'y') {
+        alert('you are correct');
+        score++
+        scoreA[arr_index++] = 'your answer was correct'
+    } else if (Qus1_b.toLowerCase() === 'no' || Qus1_b.toLowerCase() === 'n') {
+        alert('wrong answer I don\'t like it')
+        scoreA[arr_index++] = 'your answer was Wrong'
+    }
+
+}
+Qus1(user_ans)
 
 let user_ans2 = prompt(questions_two, 'Please Answer By Yes or Y same for No');
 // console.log(user_ans2);
 user_ans2 = validation(user_ans2.toLowerCase(), questions_two);
-switch (user_ans2.toLowerCase()) {
+
+function Qus2(Qus2_b) {
+    
+
+switch (Qus2_b.toLowerCase()) {
     case "yes":
     case 'y':
         alert('well done, you are right')
@@ -71,11 +82,18 @@ switch (user_ans2.toLowerCase()) {
         scoreA[arr_index++] = 'your answer was Wrong'
         break;
 
-};
+}
+}
+Qus2(user_ans2)
+
 let user_ans3 = prompt(questions_three, 'Please Answer By Yes or Y same for No');
 // console.log(user_ans3);
 user_ans3 = validation(user_ans2.toLowerCase(), questions_three);
-switch (user_ans3.toLowerCase()) {
+function Qus3(Qus3_b) {
+    
+
+
+switch (Qus3_b.toLowerCase()) {
     case "yes":
     case 'y':
         alert('well done, you are right')
@@ -90,11 +108,18 @@ switch (user_ans3.toLowerCase()) {
         break;
 
 };
+}
+Qus3(user_ans3) 
+
+
 let user_ans4 = prompt(questions_fore, 'Please Answer By Yes or Y same for No');
 // console.log(user_ans4);
 user_ans4 = validation(user_ans4.toLowerCase(), questions_fore);
+function Qus4(Qus4_b) {
+    
 
-switch (user_ans4.toLowerCase()) {
+
+switch (Qus4_b.toLowerCase()) {
     case "yes":
     case 'y':
         alert('wrong answer I don\'t like it')
@@ -109,10 +134,15 @@ switch (user_ans4.toLowerCase()) {
         break;
 
 };
+}
+Qus4(user_ans4)
 let user_ans5 = prompt(questions_five, 'Please Answer By Yes or Y same for No');
 // console.log(user_ans5);
 user_ans5 = validation(user_ans5.toLowerCase(), questions_five);
-switch (user_ans5.toLowerCase()) {
+function Qus5(Qus5_b) {
+    
+
+switch (Qus5_b.toLowerCase()) {
     case "yes":
     case 'y':
         alert('well done, you are right')
@@ -127,23 +157,30 @@ switch (user_ans5.toLowerCase()) {
         break;
 
 };
-
+}
+Qus5(user_ans5)
 let ges_ans
 console.log(typeof (ges_ans));
 
+function Qus6(Qus6_b) {
+    
+
 for (let i = 0; i < 4; i++) {
-    ges_ans = parseInt(prompt('Guess a Number between 1 - 9.'));
-    while (ges_ans >= 10 || !ges_ans) {
-        console.log(ges_ans);
+    Qus6_b = parseInt(prompt('Guess a Number between 1 - 9.'));
+    while (Qus6_b >= 10 || !Qus6_b) {
+        console.log(Qus6_b);
         alert('please enter a number between 1 - 9')
-        ges_ans = parseInt(prompt('guess a number.'));
+        Qus6_b = parseInt(prompt('guess a number.'));
     }
-    switch (ges_ans) {
+    switch (Qus6_b) {
         case 8:
         case 9:
         case 7:
             alert('Too High');
             break;
+            console.log('top')
+            // ''
+
         case 1:
         case 2:
         case 3:
@@ -158,31 +195,37 @@ for (let i = 0; i < 4; i++) {
             break;
 
     }
-    if (ges_ans === 5) {
+    if (Qus6_b === 5) {
         score++;
         scoreA[arr_index++] = 'you gees was right the answer was 5';
         break;
-    } else if (i === 3 && ges_ans !== 5) {
+    } else if (i === 3 && Qus6_b!== 5) {
         console.log(i);
         scoreA[arr_index++] = 'All of your answer was WRONG, the right answer was 5';
         alert('All of your answer was WRONG, the right answer was 5');
     }
 }
+}
+Qus6(ges_ans)
 
-// console.log(score);
-// console.log(scoreA);
-// console.log(ges_ans = parseInt(prompt('guess a number.')););
+console.log(score);
+console.log(scoreA);
+console.log(ges_ans = parseInt(prompt('guess a number.')));
 let user_answer7;
 let multiple = ['mikasa', 'eren', 'armin', 'levi', 'sasha', 'reiner', 'annie', 'jean'];
+
+function Qus7(qus7_b) {
+    
+
 for (let i = 0; i < 6; i++) {
-    user_answer7 = prompt('who is the main character in attack on titan', 'You can Google it or Eren Good Luck').toLowerCase();
-    // console.log(user_answer7);
-    while (!user_answer7) {
+    qus7_b = prompt('who is the main character in attack on titan', 'You can Google it or Eren Good Luck').toLowerCase();
+    // console.log(qus7_b);
+    while (!qus7_b) {
         alert('Please Enter a valid Text')
-        user_answer7 = prompt('Who is the main character in attack on titan', 'You can Google it or Eren Good Luck').toLowerCase();
-        // console.log(user_answer7);
+        qus7_b = prompt('Who is the main character in attack on titan', 'You can Google it or Eren Good Luck').toLowerCase();
+        // console.log(qus7_b);
     }
-    switch (user_answer7) {
+    switch (qus7_b) {
         case multiple[0]:
         case multiple[1]:
         case multiple[2]:
@@ -193,16 +236,18 @@ for (let i = 0; i < 6; i++) {
             alert('try again')
             break;
     }
-    if (user_answer7 == multiple[0] || user_answer7 == multiple[1] || user_answer7 == multiple[2]) {
+    if (qus7_b == multiple[0] || qus7_b == multiple[1] || qus7_b == multiple[2]) {
         score++;
-        scoreA[arr_index++] = 'your guess was right the answer was ' + user_answer7 + ' here are all possible answer ' + multiple[0] + ' ' + multiple[1] + ' ' + multiple[2];
-        // console.log(user_answer7);
+        scoreA[arr_index++] = 'your guess was right the answer was ' + qus7_b + ' here are all possible answer ' + multiple[0] + ' ' + multiple[1] + ' ' + multiple[2];
+        // console.log(qus7_b);
         break;
     } else if (i == 5) {
         scoreA[arr_index++] = 'All of your answer was WRONG, the right answers was  ' + multiple[0] + ' ' + multiple[1] + ' ' + multiple[2];
         alert('All of your answer was WRONG, the right answers was  ' + multiple[0] + ' ' + multiple[1] + ' ' + multiple[2]);
     }
 }
+}
+Qus7(user_answer7)
 // console.log(score);
 console.log(scoreA);
 alert('Your final score was ' + score)
