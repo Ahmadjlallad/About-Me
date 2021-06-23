@@ -144,6 +144,9 @@ for (let i = 0; i < 4; i++) {
         case 7:
             alert('Too High');
             break;
+            console.log('top')
+            // ''
+           
         case 1:
         case 2:
         case 3:
