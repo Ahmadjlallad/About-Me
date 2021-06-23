@@ -141,18 +141,20 @@ for (let i = 0; i < 4; i++) {
     switch (ges_ans) {
         case 8:
         case 9:
+        case 7:
+            alert('Too High');
+            break;
         case 1:
         case 2:
-        case 7:
         case 3:
-            alert('too low its COULD HERE LOL')
+            alert('too low');
             break;
         case 4:
         case 6:
-            alert('Too High Your are close HOT! HOT!')
+            alert('You are Very close');
             break;
         case 5:
-            alert('correct well played')
+            alert('correct well played');
             break;
 
     }
