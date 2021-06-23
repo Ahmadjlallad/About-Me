@@ -179,8 +179,6 @@ for (let i = 0; i < 4; i++) {
             alert('Too High');
             break;
             console.log('top')
-            // ''
-
         case 1:
         case 2:
         case 3:
