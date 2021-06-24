@@ -13,25 +13,21 @@ header div {
   font-family: "Benne", serif;
   color: #eee;
 }
-
 h1::first-letter {
   padding: 5px;
   font-weight: normal;
   font-size: 219%;
 }
-
 h1 {
   font-size: 200%;
   top: 5px;
   left: -1px;
   position: absolute;
 }
-
 .header-2_1 {
   top: 4px;
   left: 58px;
 }
-
 h2 {
   font-size: 150%;
   top: 57px;
@@ -40,16 +36,17 @@ h2 {
 h3:hover {
   overflow-y: scroll;
 }
-
 h3 {
   font-size: 131%;
   top: 87px;
   width: 80%;
   position: absolute;
 }
+
 nav {
   top: 15px;
 }
+
 nav ul {
   height: 40px;
   position: absolute;
@@ -57,25 +54,14 @@ nav ul {
   background-color: #d33a2c;
   top: 132px;
 }
-.fisrt {
-  left: 0px;
-  margin: 0 23.76px;
-}
-.fisrt2 {
-  left: 117px;
-  margin: 0 23.76px;
-}
-.fisrt3 {
-  left: 271px;
-  margin: 0 23.76px;
-}
 nav li {
   text-transform: capitalize;
-  margin-left: calc(90px / 3);
-  list-style: none;
-  position: absolute;
-  top: 11px;
+  margin-left: calc(90 / 3);
+  display: inline-block;
+  position: sticky;
+  position: -webkit-sticky;
 }
+
 .nav_a:hover {
   color: #ffe7e7;
   background-color: #d33a2c;
@@ -89,6 +75,7 @@ nav li {
   color: #d33a2c;
   border-radius: 5px;
 }
+
 p {
   /* padding: 10px;
   margin: 6px -61px; */
@@ -103,6 +90,7 @@ main {
   position: relative;
   background-color: #ffe7e7;
 }
+
 ol {
   font-weight: bold;
   list-style: upper-roman;
@@ -112,13 +100,15 @@ ul {
 
   font-weight: bold;
 }
-
+.ul_b::before {
+  content: "";
+  position: relative;
+}
 .lists {
   position: relative;
   color: #d33a2c;
-  border: #d33a2c solid 2px;
-  font-size: 1.25rem;
-  text-transform: capitalize;
+  border: #d33a2c solid 8px;
+  font-size: 1.5rem;
   background-color: #ffe7e7;
 }
 aside li {
@@ -126,14 +116,10 @@ aside li {
   left: 80px;
   margin: 15px;
 }
-
 footer {
-  color: #d33a2c;
+  text-align: center;
   font-weight: bolder;
-}
-footer p {
-  position: relative;
-  left: 50%;
+  border: #d33a2c solid 8px;
 }
 h5 {
   font-size: 1.8rem;
@@ -156,9 +142,6 @@ h5 {
   position: relative;
   background-color: #ffe7e7;
   top: 60px;
-}
-body {
-  width: 100%;
 }
 
 /* p.ans2 {
