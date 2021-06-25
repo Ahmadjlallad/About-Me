@@ -1,9 +1,13 @@
+body {
+  overflow-x: hidden;
+}
 * {
   font-family: "Benne", serif;
 }
 
 header {
   height: 132px;
+  position: relative;
   background-color: #ff2a2acf;
   width: 100%;
 }
@@ -47,32 +51,40 @@ h3 {
   width: 80%;
   position: absolute;
 }
+.sticky_please {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+}
 nav {
-  top: 15px;
+  position: relative;
+  bottom: -132px;
+  background-color: #d33a2c;
+  width: 100%;
 }
 nav ul {
+  left: 224px;
+  text-transform: capitalize;
   height: 40px;
-  position: absolute;
-  width: 100%;
-  background-color: #d33a2c;
-  top: 132px;
+  width: 65%;
+  position: relative;
+  list-style: none;
+  top: 0;
 }
+
 .fisrt {
   left: 0px;
-  margin: 0 23.76px;
+  margin: 0 83.3px 0;
 }
 .fisrt2 {
-  left: 117px;
-  margin: 0 23.76px;
+  left: 260.3px;
+  margin: 0 83.3px 0;
 }
 .fisrt3 {
-  left: 271px;
-  margin: 0 23.76px;
+  left: 565px;
+  margin: 0 83.3px 0;
 }
 nav li {
-  text-transform: capitalize;
-  margin-left: calc(90px / 3);
-  list-style: none;
   position: absolute;
   top: 11px;
 }
@@ -116,7 +128,8 @@ ul {
 .lists {
   position: relative;
   color: #d33a2c;
-  border: #d33a2c solid 2px;
+
+  border-top: #d33a2c solid 2px;
   font-size: 1.25rem;
   text-transform: capitalize;
   background-color: #ffe7e7;
@@ -156,9 +169,6 @@ h5 {
   position: relative;
   background-color: #ffe7e7;
   top: 60px;
-}
-body {
-  width: 100%;
 }
 
 /* p.ans2 {

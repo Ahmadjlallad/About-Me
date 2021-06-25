@@ -1,5 +1,6 @@
 * {
   font-family: "Benne", serif;
+  text-transform: capitalize;
 }
 
 header {
@@ -119,7 +120,7 @@ aside li {
 footer {
   text-align: center;
   font-weight: bolder;
-  border: #d33a2c solid 8px;
+  border: 8px solid #d33a2c;
 }
 h5 {
   font-size: 1.8rem;
